@@ -1,0 +1,23 @@
+@model ViewModels.CadeteViewModel
+
+<body>
+    <header>
+        <main>
+            <h1>Alta Cadete</h1>
+            <form asp-controller="Cadete" asp-action="CargaCadeteExito" method="post" >
+                <label asp-for="Nombre">Nombre:</label>
+                <input asp-for="Nombre">
+
+                <label asp-for="Direccion">Direccion:</label>
+                <input asp-for="Direccion">
+
+                <label asp-for="Telefono">Telefono:</label>
+                <input asp-for="Telefono">
+
+                <input type="submit" value="Cargar">
+                <input type="reset" value="Borrar">
+            </form>
+
+        </main>
+    </header>
+</body>                                                              
